@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Likuiditas - Toko Sembako Berkah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <div class="profile-placeholder" id="profile-placeholder" style="display: none;">
+                        <div class="profile-icon">👤</div>
+                        <p>Upload Foto Profil Anda</p>
+                        <input type="file" id="upload-profile" accept="image/*" style="display: none;">
+                        <button class="upload-profile-btn" onclick="document.getElementById('upload-profile').click()">
+                            📤 Upload Foto
+                        </button>
+                    </div>
+                    <img id="profile-img" 
+                         src="images/noen1.jpeg" 
+                         alt="Foto Profil Nurlailah" 
+                         class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Nurlailah</h1>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🎓</span>
+                            <div class="detail-content">
+                                <span class="detail-label">NPM</span>
+                                <span class="detail-value">2461201017</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📚</span>
+                            <div class="detail-content">
+                                <span class="detail-label">Mata Kuliah</span>
+                                <span class="detail-value">Artificial Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📝</span>
+                            <div class="detail-content">
+                                <span class="detail-label">Ujian Tengah Semester</span>
+                                <span class="detail-value">Analisis Likuiditas dengan AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Hero Card -->
+        <section class="card card-gradient-hero">
+            <h1 class="title-main"><span class="emoji-icon"></span>📊</span> <span class="gradient-text">Analisis Likuiditas</span></h1>
+            <h2 class="subtitle">Toko Sembako Berkah</h2>
+            <p class="hero-description">Evaluasi Kemampuan Keuangan untuk Pengajuan Kredit Modal Kerja</p>
+        </section>
+
+        <!-- Skenario -->
+        <section class="card card-gradient-blue">
+            <h2>🎯 Skenario Kasus</h2>
+            <div class="scenario-grid">
+                <div class="scenario-item">
+                    <span class="label">Aset Lancar</span>
+                    <span class="value">Rp 180 juta</span>
+                </div>
+                <div class="scenario-item">
+                    <span class="label">Persediaan</span>
+                    <span class="value">Rp 90 juta</span>
+                </div>
+                <div class="scenario-item">
+                    <span class="label">Kewajiban Lancar</span>
+                    <span class="value">Rp 120 juta</span>
+                </div>
+            </div>
+            <p class="scenario-description">
+                Bank meminta analisis likuiditas sebelum menyetujui kredit modal kerja.
+            </p>
+        </section>
+
+        <!-- Tugas Mahasiswa -->
+        <section class="card card-gradient-purple">
+            <h2>📝 Tugas Mahasiswa</h2>
+            <ol class="task-list">
+                <li>Minta AI menghitung rasio lancar dan rasio cepat</li>
+                <li>Hitung ulang manual dengan rumus dari buku teks</li>
+                <li>Catat selisih jawaban AI dan hasil Anda, lalu tafsirkan kondisi toko</li>
+            </ol>
+        </section>
+
+        <!-- Perhitungan AI -->
+        <section class="card card-gradient-orange">
+            <h2>🤖 Perhitungan dengan AI</h2>
+            
+            <div class="calculation-box">
+                <h3>A. Rasio Lancar (Current Ratio)</h3>
+                <p class="definition">Mengukur kemampuan perusahaan membayar kewajiban jangka pendek menggunakan seluruh aset lancarnya.</p>
+                
+                <div class="formula">
+                    <div class="formula-title">Rumus:</div>
+                    <div class="formula-content">
+                        Rasio Lancar = <span class="fraction">
+                            <span class="numerator">Aset Lancar</span>
+                            <span class="denominator">Kewajiban Lancar</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="calculation-steps">
+                    <div class="step">
+                        <span class="step-label">Perhitungan:</span>
+                        <div class="step-content">
+                            = <span class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">120</span>
+                            </span> = <span class="result-highlight">1,5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-box result-success">
+                    <strong>Hasil: 1,5 atau 150%</strong>
+                    <p>Artinya, setiap Rp1 kewajiban lancar dijamin oleh Rp1,50 aset lancar.</p>
+                </div>
+            </div>
+
+            <div class="calculation-box">
+                <h3>B. Rasio Cepat (Quick Ratio)</h3>
+                <p class="definition">Mengukur kemampuan perusahaan membayar kewajiban jangka pendek tanpa mengandalkan persediaan barang.</p>
+                
+                <div class="formula">
+                    <div class="formula-title">Rumus:</div>
+                    <div class="formula-content">
+                        Rasio Cepat = <span class="fraction">
+                            <span class="numerator">Aset Lancar - Persediaan</span>
+                            <span class="denominator">Kewajiban Lancar</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="calculation-steps">
+                    <div class="step">
+                        <span class="step-label">Perhitungan:</span>
+                        <div class="step-content">
+                            = <span class="fraction">
+                                <span class="numerator">180 - 90</span>
+                                <span class="denominator">120</span>
+                            </span> = <span class="fraction">
+                                <span class="numerator">90</span>
+                                <span class="denominator">120</span>
+                            </span> = <span class="result-highlight">0,75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-box result-warning">
+                    <strong>Hasil: 0,75 atau 75%</strong>
+                    <p>Artinya, setiap Rp1 kewajiban lancar hanya dijamin oleh Rp0,75 aset lancar di luar persediaan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perhitungan Manual -->
+        <section class="card card-gradient-green">
+            <h2>✍️ Perhitungan Manual</h2>
+            
+            <div class="manual-calc-image">
+                <h3>A. Current Ratio (Rasio Lancar)</h3>
+                <div class="manual-image-wrapper">
+                    <div class="image-placeholder" id="placeholder-cr" style="display: none;">
+                        <div class="upload-icon">📷</div>
+                        <p>Klik tombol di bawah untuk upload foto perhitungan Current Ratio</p>
+                        <input type="file" id="upload-cr" accept="image/*" style="display: none;">
+                        <button class="upload-btn" onclick="document.getElementById('upload-cr').click()">
+                            � Upload Foto Current Ratio
+                        </button>
+                    </div>
+                    <img id="img-cr" 
+                         src="images/CR.jpeg" 
+                         alt="Perhitungan Manual Current Ratio" 
+                         class="manual-calculation-img">
+                </div>
+                <div class="manual-result">
+                    <strong>Hasil:</strong> CR = 1,5
+                </div>
+            </div>
+
+            <div class="manual-calc-image">
+                <h3>B. Quick Ratio (Rasio Cepat)</h3>
+                <div class="manual-image-wrapper">
+                    <div class="image-placeholder" id="placeholder-qr" style="display: none;">
+                        <div class="upload-icon">📷</div>
+                        <p>Klik tombol di bawah untuk upload foto perhitungan Quick Ratio</p>
+                        <input type="file" id="upload-qr" accept="image/*" style="display: none;">
+                        <button class="upload-btn" onclick="document.getElementById('upload-qr').click()">
+                            � Upload Foto Quick Ratio
+                        </button>
+                    </div>
+                    <img id="img-qr" 
+                         src="images/QR.jpeg" 
+                         alt="Perhitungan Manual Quick Ratio" 
+                         class="manual-calculation-img">
+                </div>
+                <div class="manual-result">
+                    <strong>Hasil:</strong> QR = 0,75
+                </div>
+            </div>
+
+            <div class="result-box result-info">
+                <strong>Hasil Perhitungan Manual:</strong>
+                <ul>
+                    <li>Rasio lancar = <strong>1,5 kali</strong></li>
+                    <li>Rasio cepat = <strong>0,75 kali</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Perbandingan -->
+        <section class="card card-gradient-pink">
+            <h2>⚖️ Perbandingan Hasil</h2>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jenis Rasio</th>
+                            <th>Hasil AI</th>
+                            <th>Hasil Manual</th>
+                            <th>Selisih</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rasio Lancar</td>
+                            <td class="value-cell">1,5</td>
+                            <td class="value-cell">1,5</td>
+                            <td class="selisih-cell success">0</td>
+                        </tr>
+                        <tr>
+                            <td>Rasio Cepat</td>
+                            <td class="value-cell">0,75</td>
+                            <td class="value-cell">0,75</td>
+                            <td class="selisih-cell success">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="conclusion-box">
+                <h4>✅ Kesimpulan Perbandingan</h4>
+                <p>
+                    Tidak terdapat selisih antara hasil perhitungan AI dan perhitungan manual karena 
+                    keduanya menggunakan rumus dan data yang sama. Hal ini menunjukkan bahwa hasil 
+                    perhitungan AI <strong>sesuai dengan perhitungan manual</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Interpretasi -->
+        <section class="card card-gradient-teal">
+            <h2>💡 Interpretasi Kondisi Keuangan</h2>
+            
+            <div class="interpretation">
+                <div class="interpretation-item positive">
+                    <div class="icon">👍</div>
+                    <div class="content">
+                        <h4>Rasio Lancar: 1,5 kali</h4>
+                        <p>
+                            Kondisi likuiditas <strong>cukup baik</strong>. Aset lancar yang dimiliki 
+                            lebih besar daripada kewajiban lancarnya. Setiap Rp1 utang dijamin oleh 
+                            Rp1,50 aset lancar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interpretation-item warning">
+                    <div class="icon">⚠️</div>
+                    <div class="content">
+                        <h4>Rasio Cepat: 0,75 kali</h4>
+                        <p>
+                            Toko masih <strong>bergantung pada persediaan barang</strong> untuk memenuhi 
+                            kewajiban jangka pendeknya. Jika persediaan sulit terjual, toko berpotensi 
+                            mengalami kesulitan dalam membayar utang jangka pendek.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-box">
+                <h4>📌 Rekomendasi</h4>
+                <ul>
+                    <li>Toko perlu meningkatkan jumlah aset lancar yang mudah dicairkan menjadi uang tunai</li>
+                    <li>Mengelola persediaan dengan lebih baik agar tidak menumpuk</li>
+                    <li>Pihak bank sebaiknya mempertimbangkan kondisi tersebut sebelum menyetujui pengajuan kredit</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Kesimpulan Akhir -->
+        <section class="card card-gradient-red">
+            <h2>🎓 Kesimpulan Akhir</h2>
+            <div class="final-conclusion">
+                <p class="conclusion-main">
+                    Toko Sembako Berkah memiliki kemampuan likuiditas yang <strong>cukup baik</strong> 
+                    berdasarkan rasio lancar, tetapi masih perlu <strong>memperbaiki rasio cepatnya</strong>.
+                </p>
+                <p class="conclusion-detail">
+                    Pengajuan kredit modal kerja dapat dipertimbangkan dengan memperhatikan kemampuan 
+                    toko dalam menyediakan kas untuk membayar kewajiban jangka pendek.
+                </p>
+                <div class="verdict">
+                    <span class="verdict-label">Keputusan:</span>
+                    <span class="verdict-value">Disetujui dengan Syarat</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Analisis Likuiditas Toko Sembako Berkah | UTS Nurlailah Mata Kuliah Artificial Intelligence</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
